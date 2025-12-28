@@ -1,1 +1,11 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+@import "./variables.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-size: $base-size;
+}
