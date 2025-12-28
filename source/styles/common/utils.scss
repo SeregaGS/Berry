@@ -1,0 +1,97 @@
+@import "../common/function.scss";
+@import "../common/variables.scss";
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.title-one {
+  font-family: inherit;
+  font-size: fluid(36, 48, 52);
+  font-weight: 400;
+  line-height: 1;
+  color: $color-text-primary;
+}
+.title-two {
+  font-family: inherit;
+  font-size: fluid(36, 48, 52);
+  font-weight: 400;
+  line-height: 1;
+  color: $color-text-primary;
+}
+.title-three {
+  font-family: inherit;
+  font-size: fluid(20, 22, 28);
+  font-weight: 400;
+  line-height: 1;
+  color: $color-text-primary;
+}
+.text {
+  font-family: inherit;
+  font-size: fluid(14, 15, 16);
+  font-weight: 400;
+  line-height: 1;
+  color: $color-text-primary;
+  text-decoration: none;
+  &--accent {
+    font-size: fluid(16, 17, 18);
+  }
+}
+.link {
+  font-family: inherit;
+  font-size: rem(22);
+  font-weight: 400;
+  line-height: 1;
+  color: $color-text-primary;
+  text-decoration: none;
+  outline: none;
+  transition: color 0.15s ease;
+  &:hover,
+  &:focus {
+    color: $color-success-hover;
+  }
+  &:active {
+    color: $color-success-active;
+  }
+
+  &--telephone {
+    display: inline-flex;
+    align-items: center;
+    font-size: rem(16);
+    column-gap: 4px;
+    transition: background-color 0.15s;
+    &::before {
+      content: "";
+      width: rem(32);
+      min-height: rem(32);
+      mask-image: url("../../icons/icon-call.svg");
+      mask-repeat: no-repeat;
+      mask-size: cover;
+      background-color: $color-text-primary;
+    }
+    &:hover {
+      &::before {
+        background-color: $color-success-hover;
+      }
+    }
+    &:focus {
+      &::before {
+        background-color: $color-success-hover;
+      }
+    }
+    &:active {
+      &::before {
+        background-color: $color-success-active;
+      }
+    }
+  }
+}
+
