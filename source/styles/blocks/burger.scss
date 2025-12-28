@@ -1,0 +1,35 @@
+@import "../common/function.scss";
+@import "../common/variables.scss";
+
+.burger-button {
+  display: inline-flex;
+  place-items: center;
+  width: rem(60);
+  height: rem(60);
+  padding: 0;
+  cursor: pointer;
+  background-color: $color-success;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  transition: background-color 0.15s;
+  border: none;
+  outline: none;
+  &:hover,
+  &:focus {
+    background-color: $color-success-hover;
+  }
+  &:active {
+    background-color: $color-success-active;
+  }
+  &--open {
+    mask-image: url("../../icons/burger-open.svg");
+  }
+  &--close {
+    width: rem(28);
+    height: rem(28);
+    mask-image: url("../../icons/burger-close.svg");
+    mask-size: rem(26);
+  }
+}
+
