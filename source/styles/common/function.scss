@@ -1,0 +1,11 @@
+@import "./variables.scss";
+
+@function fluid($min, $large-size, $max) {
+  $vw: calc($large-size / ($width-medium - 1)) * 100;
+  @return clamp(rem($min), #{$vw}vw, rem($max));
+}
+
+@function rem($size) {
+  $px-to-rem: calc($size / $base-size);
+  @return #{$px-to-rem}rem;
+}
