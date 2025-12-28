@@ -1,0 +1,32 @@
+@use 'sass:color';
+@import "../common/variables.scss";
+@import "../common/function.scss";
+
+
+.button {
+  display: inline-flex;
+  margin: 0;
+  padding: fluid(14, 16, 16) fluid(64, 82, 104) fluid(14, 16, 18) fluid(64, 82, 104);
+  font-family: inherit;
+  font-size: fluid(20, 20, 28);
+  line-height: 1;
+  color: $color-text-secondary;
+  text-decoration: none;
+  border: none;
+  border-radius: rem(40);
+  background-color: $color-primary;
+  box-shadow: 0 4px 4px transparentize($color-primary, 0.75);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  &:hover,
+  &:focus {
+    background-color: $color-primary-hover;
+    outline: none;
+  }
+  &:active {
+    background-color: $color-primary-active;
+  }
+  @media (max-width: $width-small) {
+    box-shadow: none;
+  }
+}
