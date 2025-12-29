@@ -1,0 +1,41 @@
+@import "../common/variables.scss";
+@import "../common/function.scss";
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  width: rem(135);
+  height: rem(60);
+  column-gap: 8px;
+  transition: fill 0.15s;
+  &:focus {
+    outline: none;
+  }
+  &:hover &__name-text,
+  &:hover &__petals,
+  &:focus &__name-text,
+  &:focus &__petals {
+    fill: $color-success-hover;
+
+  }
+  &:active &__name-text,
+  &:active &__petals {
+    fill: $color-success-active;
+  }
+  @media (max-width: 320px) {
+    min-width: rem(60);
+    max-width: rem(60);
+  }
+}
+.logo__name {
+  @media (max-width: 320px) {
+    display: none;
+  }
+}
+.logo__name-text {
+  fill: $color-success;
+}
+.logo__name-text,
+.logo__petals {
+  transition: fill 0.15s;
+}
