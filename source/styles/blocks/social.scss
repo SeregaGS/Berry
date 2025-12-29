@@ -1,0 +1,45 @@
+@import "../common/function.scss";
+@import "../common/variables.scss";
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(32);
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.social__item {
+  width: fluid(32, 40, 40);
+  height: fluid(32, 40, 40);
+  border-radius: 50%;
+}
+.social__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: $color-success;
+  mask-size: inherit;
+  mask-repeat: no-repeat;
+  transition: background-color 0.15s;
+  &:hover,
+  &:focus {
+    background-color: $color-success-hover;
+    outline: none;
+  }
+  &:active {
+    background-color: $color-success-active;
+  }
+  &--telegram {
+    mask-image: url('../../icons/telegram.svg');
+  }
+  &--vkontakte {
+    mask-image: url('../../icons/vkontakte.svg');
+  }
+  &--youtube {
+    mask-image: url('../../icons/youtube.svg');
+  }
+  }
+
