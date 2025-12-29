@@ -1,0 +1,41 @@
+@import "../common/variables.scss";
+@import "../common/function.scss";
+
+.radio {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 5px;
+  cursor: pointer;
+  outline: none;
+  &:hover .radio__input {
+    border-color: $color-success-hover;
+  }
+  &:active .radio__input {
+    border-color: $color-success-active;
+  }
+  &:focus-within .radio__input {
+    border-color: $color-success-hover;
+  }
+  input[type="radio"]:disabled ~ .radio__input {
+    border-color: $color-bg-muted;
+  }
+  input[type="radio"]:checked ~ .radio__input {
+    background-color: $color-success;
+  }
+  &:hover input[type="radio"]:checked ~ .radio__input {
+    background-color: $color-success-hover;
+  }
+  &:active input[type="radio"]:checked ~ .radio__input {
+    background-color: $color-success-active;
+  }
+}
+.radio__input {
+  display: inline-flex;
+  width: rem(21);
+  height: rem(21);
+  padding: rem(5);
+  border: 1px solid $color-success;
+  border-radius: 50%;
+  background-clip: content-box;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
