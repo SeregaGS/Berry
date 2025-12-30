@@ -13,4 +13,8 @@
 @import "./blocks/input.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/social.scss";
-@import "./blocks/header.scss";
+/* LAYOUTS */
+@import "./layouts/grid.scss";
+@import "layouts/header.scss";
+@import "layouts/navigation.scss";
+
