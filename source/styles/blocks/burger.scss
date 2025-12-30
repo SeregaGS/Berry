@@ -2,34 +2,35 @@
 @import "../common/variables.scss";
 
 .burger-button {
-  display: inline-flex;
-  place-items: center;
+  display: none;
   width: rem(60);
   height: rem(60);
   padding: 0;
   cursor: pointer;
   background-color: $color-success;
-  mask-position: center;
+  mask-image: url("../../icons/burger-open.svg");
+  mask-position: 7px 0;
   mask-repeat: no-repeat;
   mask-size: 100%;
   transition: background-color 0.15s;
   border: none;
   outline: none;
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: $color-success-hover;
   }
   &:active {
     background-color: $color-success-active;
   }
-  &--open {
-    mask-image: url("../../icons/burger-open.svg");
+  &:focus {
+    background-color: $color-success-hover;
   }
-  &--close {
-    width: rem(28);
-    height: rem(28);
+  &--open {
     mask-image: url("../../icons/burger-close.svg");
-    mask-size: rem(26);
+    mask-size: rem(28);
+    mask-position: 31px 0;
+  }
+  @media (max-width: $width-medium - 1) {
+    display: block;
   }
 }
 
