@@ -1,0 +1,22 @@
+@import "../common/function.scss";
+@import "../common/variables.scss";
+
+.container {
+  max-width: $width-large;
+  min-width: $width-small;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $padding-primary-large;
+  @media (max-width: $width-large) {
+    padding: 0 $padding-primary-medium;
+  }
+  @media (max-width: $width-medium - 1) {
+    padding: 0 $padding-primary-small;
+  }
+}
+.flex {
+  display: flex;
+  /* Временные стили */
+  justify-content: space-between;
+  align-items: center;
+}
