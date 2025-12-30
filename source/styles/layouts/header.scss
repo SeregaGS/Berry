@@ -1,0 +1,26 @@
+@import "../common/function.scss";
+@import "../common/variables.scss";
+
+.header {
+  position: relative;
+  padding: rem(24) 0;
+  background-color: $color-bg-secondary;
+  z-index: 10;
+  box-shadow: $shadow-primary;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: $shadow-primary;
+    z-index: -1;
+  }
+  @media (max-width: $width-large) {
+    padding: rem(22) 0;
+  }
+  @media (max-width: $width-medium - 1) {
+    padding: fluid(4, 10, 22) 0;
+  }
+}
