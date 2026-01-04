@@ -14,21 +14,21 @@
   overflow: hidden;
 }
 .title-one {
-  font-family: inherit;
+  font-family: $font-family-title;
   font-size: fluid(36, 48, 52);
   font-weight: 400;
   line-height: 1;
   color: $color-text-primary;
 }
 .title-two {
-  font-family: inherit;
+  font-family: $font-family-title;
   font-size: fluid(36, 48, 52);
   font-weight: 400;
   line-height: 1;
   color: $color-text-primary;
 }
 .title-three {
-  font-family: inherit;
+  font-family: $font-family-title;
   font-size: fluid(20, 22, 28);
   font-weight: 400;
   line-height: 1;
