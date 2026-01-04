@@ -27,7 +27,7 @@
   &:active {
     background-color: $color-primary-active;
   }
-  @media (max-width: $width-small) {
+  @media (max-width: $width-medium - 1) {
     box-shadow: none;
   }
 }
