@@ -16,7 +16,11 @@
 }
 .flex {
   display: flex;
-  /* Временные стили */
+}
+.between {
   justify-content: space-between;
   align-items: center;
+}
+.right {
+  justify-content: end;
 }
