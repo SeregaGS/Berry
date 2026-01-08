@@ -86,7 +86,7 @@ export function processScripts () {
 
 export function optimizeRaster () {
   const RAW_DENSITY = 2;
-  const TARGET_FORMATS = [undefined, 'webp']; // undefined — initial format: jpg or png
+  const TARGET_FORMATS = [undefined, 'webp', 'avif']; // undefined — initial format: jpg or png
 
   function createOptionsFormat() {
     const formats = [];
@@ -107,7 +107,7 @@ export function optimizeRaster () {
     return { formats };
   }
 
-  return src(`${PATH_TO_RAW}images/**/*.{png,jpg,jpeg}`)
+  return src(`${PATH_TO_RAW}images/**/*.{png,jpg,jpeg}`, { encoding: false })
     .pipe(sharp(createOptionsFormat()))
     .pipe(dest(`${PATH_TO_SOURCE}images`));
 }
