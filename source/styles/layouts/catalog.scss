@@ -1,0 +1,43 @@
+@import "../common/variables.scss";
+@import "../common/function.scss";
+
+.catalog {
+  padding: rem(103) 0;
+  margin-left: -2px;
+  @media (max-width: $width-medium - 200) {
+    padding: rem(62) 0;
+    margin-left: 0;
+  }
+}
+.catalog__title {
+  margin-top: 0;
+  margin-bottom: rem(95);
+  text-align: center;
+  color: $color-success;
+  @media (max-width: $width-medium){
+    margin-bottom: rem(75);
+  }
+  @media (max-width: $width-medium - 200) {
+    margin-bottom: rem(73);
+  }
+}
+.catalog__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: rem(52) rem(24);
+  @media (max-width: $width-large - 268) {
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: $width-medium) {
+    max-width: rem(580);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: rem(52);
+    margin: 0 auto;
+  }
+  @media (max-width: $width-medium - 200) {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: rem(24);
+  }
+}
