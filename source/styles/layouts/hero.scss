@@ -5,11 +5,11 @@
   display: flex;
   min-height: rem(800);
   background-image: image-set(
-    url("../../images/background/background-hero.avif") type("image/avif") 1x,
+    url("../../images/background/background-hero@1x.avif") type("image/avif") 1x,
     url("../../images/background/background-hero@2x.avif") type("image/avif") 2x,
-    url("../../images/background/background-hero.webp") type("image/webp") 1x,
+    url("../../images/background/background-hero@1x.webp") type("image/webp") 1x,
     url("../../images/background/background-hero@2x.webp") type("image/webp") 2x,
-    url("../../images/background/background-hero.jpg") type("image/jpg") 1x,
+    url("../../images/background/background-hero@1x.jpg") type("image/jpg") 1x,
     url("../../images/background/background-hero@2x.jpg") type("image/jpg") 2x
   );
   background-repeat: no-repeat;
