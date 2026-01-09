@@ -10,9 +10,6 @@
   box-shadow: $shadow-primary;
   overflow: hidden;
   justify-items: center;
-  @media (max-width: $width-medium) {
-    max-width: rem(264);
-  }
 }
 .card__description {
   width: 100%;

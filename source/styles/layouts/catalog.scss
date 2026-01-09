@@ -41,3 +41,8 @@
     row-gap: rem(24);
   }
 }
+.catalog__item {
+  @media (max-width: $width-medium) {
+    max-width: rem(264);
+  }
+}
