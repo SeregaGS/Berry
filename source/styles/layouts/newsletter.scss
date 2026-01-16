@@ -1,0 +1,45 @@
+@import "../common/variables.scss";
+@import "../common/function.scss";
+
+.newsletter {
+  padding: rem(100) 0;
+  @media (max-width: $width-medium - 1) {
+    padding: rem(82) 0;
+  }
+}
+.newsletter__title {
+  margin: rem(43) 0 rem(101) 0;
+  color: $color-success;
+  text-align: center;
+  @media (max-width: $width-large) {
+    margin: rem(17) 0 rem(75) rem(-4);
+  }
+  @media (max-width: $width-medium - 1) {
+    margin-bottom: rem(64);
+    margin-left: rem(1);
+    line-height: rem(40);
+  }
+}
+.newsletter__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: rem(24);
+  @media (max-width: $width-large) {
+    gap: rem(34) rem(20);
+  }
+  @media (max-width: $width-medium - 1) {
+    row-gap: rem(24);
+  }
+}
+.newsletter__post {
+  width: 100%;
+  max-width: rem(360);
+  @media (max-width: $width-large) {
+    max-width: rem(348);
+    min-height: rem(494);
+  }
+  @media (max-width: $width-medium - 1) {
+    min-height: rem(400);
+  }
+}
