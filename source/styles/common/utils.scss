@@ -38,7 +38,7 @@
   font-family: inherit;
   font-size: fluid(14, 15, 16);
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.25;
   color: $color-text-primary;
   text-decoration: none;
   &--accent {
@@ -66,7 +66,7 @@
     display: inline-flex;
     align-items: center;
     font-size: rem(16);
-    column-gap: 4px;
+    column-gap: rem(4);
     transition: background-color 0.15s;
     &::before {
       content: "";
@@ -94,4 +94,13 @@
     }
   }
 }
-
+.decoration-leaf {
+  background-image: url("../../icons/line-leaf.svg");
+  background-size: rem(296) rem(42);
+  background-position: center top;
+  background-repeat: no-repeat;
+  @media (max-width: $width-medium - 1) {
+    background-size: rem(228) rem(32);
+    background-position: center rem(3);
+  }
+}
