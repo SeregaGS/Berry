@@ -2,7 +2,7 @@
 @import "../common/function.scss";
 
 .catalog {
-  padding: rem(103) 0;
+  padding: rem(103) 0 rem(100) 0;
   margin-left: -2px;
   @media (max-width: $width-medium - 200) {
     padding: rem(62) 0;
