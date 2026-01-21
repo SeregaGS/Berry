@@ -1,0 +1,10 @@
+@import "../common/function.scss";
+@import "../common/variables.scss";
+
+.page__body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $page-primary;
+}
