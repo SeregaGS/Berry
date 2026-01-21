@@ -4,7 +4,7 @@
 .newsletter {
   padding: rem(100) 0;
   @media (max-width: $width-medium - 1) {
-    padding: rem(82) 0;
+    padding: rem(82) 0 rem(50) 0;
   }
 }
 .newsletter__title {
