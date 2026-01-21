@@ -1,0 +1,14 @@
+@import "../common/function.scss";
+@import "../common/variables.scss";
+
+.map {
+  width: 100%;
+  height: rem(372);
+  overflow: hidden;
+}
+.map__container {
+  display: inline-flex;
+  @media (max-width: $width-large) {
+    width: 100%;
+  }
+}
