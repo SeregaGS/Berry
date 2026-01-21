@@ -15,10 +15,15 @@
 @import "./blocks/social.scss";
 @import "./blocks/card.scss";
 @import "./blocks/post.scss";
+@import "./blocks/map.scss";
+@import "./blocks/address.scss";
 /* LAYOUTS */
 @import "./layouts/grid.scss";
+@import "./layouts/body.scss";
 @import "./layouts/header.scss";
 @import "./layouts/navigation.scss";
 @import "./layouts/hero.scss";
 @import "./layouts/catalog.scss";
 @import "./layouts/newsletter.scss";
+@import "layouts/contacts";
+@import "./layouts/footer.scss";
