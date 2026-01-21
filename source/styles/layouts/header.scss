@@ -6,7 +6,6 @@
   padding: rem(24) 0;
   background-color: $color-bg-secondary;
   z-index: 10;
-  box-shadow: $shadow-primary;
   &::before {
     content: "";
     position: absolute;
