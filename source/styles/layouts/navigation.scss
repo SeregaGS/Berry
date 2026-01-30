@@ -1,6 +1,26 @@
 @import "../common/function.scss";
 @import "../common/variables.scss";
 
+.navigation-no-js {
+  @media (max-width: $width-medium - 1) {
+    .navigation__container {
+      position: absolute;
+      left: 0;
+      top: fluid(60, 65, 85);
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(31);
+      width: 100%;
+      padding: 34px 40px;
+      margin: 0;
+      background-color: $color-bg-secondary;
+      z-index: -2;
+    }
+    .burger-button {
+      display: none;
+    }
+  }
+}
 .navigation__container {
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +45,7 @@
       flex-direction: column;
       row-gap: rem(31);
       width: 100%;
-      padding: 34px 40px;
+      padding: rem(34) rem(40);
       margin: 0;
       background-color: $color-bg-secondary;
       z-index: -2;
