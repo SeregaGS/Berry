@@ -54,8 +54,8 @@
   text-decoration: none;
   outline: none;
   transition: color 0.15s ease;
-  &:hover,
-  &:focus {
+  &:hover:not(&--active),
+  &:focus:not(&--active) {
     color: $color-success-hover;
   }
   &:active {
