@@ -9,6 +9,34 @@
   @media (max-width: $width-medium - 1) {
     padding: rem(107) 0 0 0;
   }
+  &--delivery {
+    padding-top: rem(141);
+    @media (max-width: $width-medium - 1) {
+      padding-top: rem(96);
+    }
+    .contacts {
+      @media (max-width: $width-medium - 1) {
+        margin-bottom: rem(64);
+      }
+    }
+    .contacts__info {
+      margin-left: -3px;
+      .address__title {
+        @media (max-width: $width-medium - 1) {
+          margin-bottom: rem(64);
+        }
+      }
+      @media (max-width: $width-large) {
+        margin-left: 0;
+      }
+    }
+    .contacts__map {
+      margin-left: -2px;
+      @media (max-width: $width-large) {
+        margin-left: -50vw;
+      }
+    }
+  }
 }
 .footer.decoration-leaf {
   background-position-y: 0;
@@ -49,7 +77,7 @@
   mask-repeat: no-repeat;
   mask-size: contain;
   transition: background-color 0.15s ease;
-  &:hover {
+  &:hover, &:focus {
     background-color: $color-success-hover;
   }
   &:active {
@@ -71,7 +99,7 @@
   }
 }
 .footer__container .social {
-  margin: 0 0 0 rem(16);
+  margin: 0 0 0 rem(45);
   justify-content: center;
   @media (max-width: $width-large) {
     margin: rem(5) 0 0 rem(40);
