@@ -13,7 +13,7 @@
     gap: rem(40);
   }
   @media (max-width: $width-medium - 1) {
-    gap: 26px;
+    gap: rem(26);
     margin-bottom: rem(60);
   }
 }
