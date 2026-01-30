@@ -4,7 +4,7 @@
 .radio {
   display: inline-flex;
   align-items: center;
-  column-gap: 5px;
+  column-gap: rem(14);
   cursor: pointer;
   outline: none;
   &:hover .radio__input {
@@ -31,11 +31,18 @@
 }
 .radio__input {
   display: inline-flex;
-  width: rem(21);
-  height: rem(21);
+  min-width: rem(21);
+  min-height: rem(21);
   padding: rem(5);
   border: 1px solid $color-success;
   border-radius: 50%;
   background-clip: content-box;
   transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+.radio__value {
+  font-family: $font-family-text;
+  font-size: rem(18);
+  @media (max-width: $width-medium - 1) {
+    font-size: rem(16);
+  }
 }
