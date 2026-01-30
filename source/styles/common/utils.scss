@@ -58,40 +58,11 @@
   &:focus:not(&--active) {
     color: $color-success-hover;
   }
-  &:active {
+  &:active:not(&--active) {
     color: $color-success-active;
   }
-
-  &--telephone {
-    display: inline-flex;
-    align-items: center;
-    font-size: rem(16);
-    column-gap: rem(4);
-    transition: background-color 0.15s;
-    &::before {
-      content: "";
-      width: rem(32);
-      min-height: rem(32);
-      mask-image: url("../../icons/icon-call.svg");
-      mask-repeat: no-repeat;
-      mask-size: cover;
-      background-color: $color-text-primary;
-    }
-    &:hover {
-      &::before {
-        background-color: $color-success-hover;
-      }
-    }
-    &:focus {
-      &::before {
-        background-color: $color-success-hover;
-      }
-    }
-    &:active {
-      &::before {
-        background-color: $color-success-active;
-      }
-    }
+  &--active {
+    color: hsla(161, 79%, 28%, 1);
   }
 }
 .decoration-leaf {
