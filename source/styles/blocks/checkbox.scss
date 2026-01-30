@@ -4,9 +4,9 @@
 .checkbox {
   display: inline-flex;
   align-items: center;
-  column-gap: 8px;
+  column-gap: rem(12);
+  width: fit-content;
   cursor: pointer;
-
   &:hover .checkbox__input {
     border-color: $color-success-hover;
   }
@@ -38,7 +38,7 @@
   min-width: rem(24);
   min-height: rem(24);
   border: 2px solid $color-success;
-  border-radius: 5px;
+  border-radius: rem(5);
   transition: border-color 0.15s ease;
 }
 .checkbox__input::before {
@@ -51,4 +51,13 @@
   transform: translate(-50%, -50%);
   z-index: 5;
   opacity: 0;
+}
+.checkbox__value {
+  align-self: center;
+  margin-top: -1px;
+  font-family: $font-family-text;
+  font-size: rem(18);
+  @media (max-width: $width-medium - 1) {
+    font-size: rem(16);
+  }
 }
