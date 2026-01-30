@@ -6,7 +6,7 @@
   align-items: center;
   width: rem(135);
   height: rem(60);
-  column-gap: 10px;
+  column-gap: rem(10);
   transition: fill 0.15s;
   &:focus {
     outline: none;
@@ -32,7 +32,7 @@
   }
 }
 .logo__name {
-  margin: 4px 0 0 0;
+  margin: rem(4) 0 0 0;
   @media (max-width: $width-medium - 1) {
     display: none;
   }
