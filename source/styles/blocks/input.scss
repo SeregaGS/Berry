@@ -4,7 +4,7 @@
 .input {
   display: flex;
   flex-direction: column;
-  row-gap: 4px;
+  row-gap: rem(4);
   &:hover .input__value:not(:disabled, .input__value--error) {
     border-color: $color-success-hover;
   }
@@ -16,13 +16,14 @@
   }
 }
 .input__value {
-  width: fit-content;
-  padding: rem(16) rem(12);
+  width: 100%;
+  padding: rem(16) rem(12) rem(15);
   font-family: inherit;
   font-size: rem(16);
   border: 1px solid $color-success;
   border-radius: rem(20);
   outline: none;
+  resize: none;
   &--error {
     border-color: $color-error;
   }
@@ -41,11 +42,15 @@
 .input__label {
   order: -1;
   display: inline-flex;
-  column-gap: 4px;
+  column-gap: rem(4);
   margin: 0 0 0 rem(12);
   font-family: inherit;
   font-size: rem(16);
   color: $color-text-primary;
+  @media (max-width: $width-medium - 1) {
+    font-size: rem(14);
+    margin-top: 1px;
+  }
 }
 .input__message {
   display: none;
