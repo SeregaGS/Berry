@@ -9,7 +9,7 @@
   cursor: pointer;
   background-color: $color-success;
   mask-image: url("../../icons/burger-open.svg");
-  mask-position: 7px 0;
+  mask-position: 7px 50%;
   mask-repeat: no-repeat;
   mask-size: 100%;
   transition: background-color 0.15s;
@@ -27,7 +27,7 @@
   &--open {
     mask-image: url("../../icons/burger-close.svg");
     mask-size: rem(28);
-    mask-position: 31px 0;
+    mask-position: 31px 50%;
   }
   @media (max-width: $width-medium - 1) {
     display: block;
