@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["source/scripts/burger.js"],
+  "sourcesContent": ["const navigation = document.querySelector('.navigation');\nconst burgerButton = navigation.querySelector('.burger-button');\nconst burgerText = burgerButton.querySelector('.visually-hidden');\nconst navigationContainer = navigation.querySelector('.navigation__container');\n\nconst burger = () => {\n  if (navigation.classList.contains('navigation-no-js')) {\n    navigation.classList.remove('navigation-no-js');\n  }\n  burgerButton.addEventListener('click', () => {\n    const isOpen = burgerButton.classList.contains('burger-button--open');\n    burgerText.textContent = isOpen ? '\u041E\u0442\u043A\u0440\u044B\u0442\u044C \u043C\u0435\u043D\u044E' : '\u0417\u0430\u043A\u0440\u044B\u0442\u044C \u043C\u0435\u043D\u044E';\n    burgerButton.classList.toggle('burger-button--open');\n    navigationContainer.classList.toggle('navigation__container--open');\n  });\n};\n\nexport { burger };\n"],
+  "mappings": ";AAAA,IAAM,aAAa,SAAS,cAAc,aAAa;AACvD,IAAM,eAAe,WAAW,cAAc,gBAAgB;AAC9D,IAAM,aAAa,aAAa,cAAc,kBAAkB;AAChE,IAAM,sBAAsB,WAAW,cAAc,wBAAwB;AAE7E,IAAM,SAAS,MAAM;AACnB,MAAI,WAAW,UAAU,SAAS,kBAAkB,GAAG;AACrD,eAAW,UAAU,OAAO,kBAAkB;AAAA,EAChD;AACA,eAAa,iBAAiB,SAAS,MAAM;AAC3C,UAAM,SAAS,aAAa,UAAU,SAAS,qBAAqB;AACpE,eAAW,cAAc,SAAS,wEAAiB;AACnD,iBAAa,UAAU,OAAO,qBAAqB;AACnD,wBAAoB,UAAU,OAAO,6BAA6B;AAAA,EACpE,CAAC;AACH;",
+  "names": []
+}
