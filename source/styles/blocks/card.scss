@@ -81,3 +81,20 @@
     padding: rem(16) rem(17) rem(16) rem(15);
   }
 }
+.card__link {
+  text-decoration: none;
+  color: $color-success;
+  .card__title {
+    color: $color-success;
+    transition: color 0.15s ease;
+    &:hover {
+      color: $color-success-hover;
+    }
+    &:focus {
+      color: $color-success-hover;
+    }
+    &:active {
+      color: $color-success-active;
+    }
+  }
+}
