@@ -68,11 +68,11 @@
 }
 .post__leaf {
   background-image: url("../../icons/leaf-post.svg");
-  background-size: rem(96);
+  background-size: rem(96) rem(40);
   background-repeat: no-repeat;
-  background-position: center rem(21);
+  background-position: center rem(43);
   @media (max-width: $width-medium - 1) {
-    background-size: rem(76);
-    background-position-y: rem(15);
+    background-size: rem(76) rem(32);
+    background-position-y: rem(34);
   }
 }
