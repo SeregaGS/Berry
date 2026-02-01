@@ -16,7 +16,7 @@ const customMarkerIcon = L.divIcon({
   iconAnchor: [32, 32],
   popupAnchor: [-15, -24],
   html: `<div style="
-    mask-image: url('../icons/stack.svg#leaf-icon');
+    mask-image: url('/icons/stack.svg#leaf-icon');
     width: 32px;
     height: 32px;
     background-color: #6A107A;"></div>`
