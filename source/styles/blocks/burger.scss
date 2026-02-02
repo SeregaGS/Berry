@@ -15,22 +15,26 @@
   transition: background-color 0.15s;
   border: none;
   outline: none;
+
   &:hover {
     background-color: $color-success-hover;
   }
+
   &:active {
     background-color: $color-success-active;
   }
+
   &:focus {
     background-color: $color-success-hover;
   }
+
   &--open {
     mask-image: url("../../icons/burger-close.svg");
     mask-size: rem(28);
     mask-position: 31px 50%;
   }
+
   @media (max-width: $width-medium - 1) {
     display: block;
   }
 }
-

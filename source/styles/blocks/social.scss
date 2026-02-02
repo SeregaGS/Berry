@@ -1,6 +1,6 @@
 @import "../common/function.scss";
 @import "../common/variables.scss";
-
+/* stylelint-disable function-no-unknown */
 .social {
   display: flex;
   flex-wrap: wrap;
@@ -9,11 +9,13 @@
   margin: 0;
   list-style-type: none;
 }
+
 .social__item {
   width: fluid(32, 40, 40);
   height: fluid(32, 40, 40);
   border-radius: 50%;
 }
+
 .social__link {
   display: inline-flex;
   align-items: center;
@@ -24,22 +26,26 @@
   mask-size: inherit;
   mask-repeat: no-repeat;
   transition: background-color 0.15s;
+
   &:hover,
   &:focus {
     background-color: $color-success-hover;
     outline: none;
   }
+
   &:active {
     background-color: $color-success-active;
   }
+
   &--telegram {
-    mask-image: url('../../icons/telegram.svg');
-  }
-  &--vkontakte {
-    mask-image: url('../../icons/vkontakte.svg');
-  }
-  &--youtube {
-    mask-image: url('../../icons/youtube.svg');
-  }
+    mask-image: url("../../icons/telegram.svg");
   }
 
+  &--vkontakte {
+    mask-image: url("../../icons/vkontakte.svg");
+  }
+
+  &--youtube {
+    mask-image: url("../../icons/youtube.svg");
+  }
+}

@@ -7,28 +7,36 @@
   column-gap: rem(14);
   cursor: pointer;
   outline: none;
+
   &:hover .radio__input {
     border-color: $color-success-hover;
   }
+
   &:active .radio__input {
     border-color: $color-success-active;
   }
+
   &:focus-within .radio__input {
     border-color: $color-success-hover;
   }
+
   input[type="radio"]:disabled ~ .radio__input {
     border-color: $color-bg-muted;
   }
+
   input[type="radio"]:checked ~ .radio__input {
     background-color: $color-success;
   }
+
   &:hover input[type="radio"]:checked ~ .radio__input {
     background-color: $color-success-hover;
   }
+
   &:active input[type="radio"]:checked ~ .radio__input {
     background-color: $color-success-active;
   }
 }
+
 .radio__input {
   display: inline-flex;
   min-width: rem(21);
@@ -39,9 +47,11 @@
   background-clip: content-box;
   transition: border-color 0.15s ease, background-color 0.15s ease;
 }
+
 .radio__value {
   font-family: $font-family-text;
   font-size: rem(18);
+
   @media (max-width: $width-medium - 1) {
     font-size: rem(16);
   }

@@ -8,38 +8,46 @@
   height: rem(60);
   column-gap: rem(10);
   transition: fill 0.15s;
+
   &:focus {
     outline: none;
   }
+
   &:hover &__name-text,
   &:hover &__petals,
   &:focus &__name-text,
   &:focus &__petals {
     fill: $color-success-hover;
-
   }
+
   &:active &__name-text,
   &:active &__petals {
     fill: $color-success-active;
   }
+
   @media (max-width: $width-large) {
     width: rem(133);
   }
+
   @media (max-width: $width-medium - 1) {
     width: rem(52);
     height: rem(52);
     margin-left: -2px;
   }
 }
+
 .logo__name {
-  margin: rem(4) 0 0 0;
+  margin: rem(4) 0 0;
+
   @media (max-width: $width-medium - 1) {
     display: none;
   }
 }
+
 .logo__name-text {
   fill: $color-success;
 }
+
 .logo__name-text,
 .logo__petals {
   transition: fill 0.15s;

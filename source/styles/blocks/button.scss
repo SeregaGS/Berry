@@ -1,8 +1,6 @@
-@use 'sass:color';
-@import "../common/variables.scss";
 @import "../common/function.scss";
-
-
+@import "../common/variables.scss";
+/* stylelint-disable function-no-unknown */
 .button {
   width: fit-content;
   display: inline-flex;
@@ -18,14 +16,17 @@
   box-shadow: 0 4px 4px transparentize($color-primary, 0.75);
   cursor: pointer;
   transition: background-color 0.15s ease;
+
   &:hover,
   &:focus {
     background-color: $color-primary-hover;
     outline: none;
   }
+
   &:active {
     background-color: $color-primary-active;
   }
+
   @media (max-width: $width-medium - 1) {
     box-shadow: none;
   }
