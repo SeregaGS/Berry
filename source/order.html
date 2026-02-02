@@ -7,7 +7,6 @@
     <link rel="preload" href="fonts/Comfortaa/Comfortaa-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Raleway/Raleway-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="vendor/leaflet/leaflet.css" crossorigin="">
   </head>
   <body class="page__body">
     <header class="header">
@@ -46,7 +45,7 @@
               <a class="navigation__link link" href="order.html">Заказать</a>
             </li>
           </ul>
-          <button class="burger-button">
+          <button class="burger-button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </nav>
@@ -58,7 +57,7 @@
         <div class="delivery__background"></div>
         <div class="container">
           <h2 class="delivery__title title-one">Закажи ягоды</h2>
-          <p class="delivery__description">Мы соберем для вас ягоды и доставим их в удобном для вас<br> виде - свежими или замороженными </p>
+          <p class="delivery__description">Мы соберем для вас ягоды и доставим их в удобном для вас<br> виде - свежими или замороженными</p>
           <form class="delivery__form decoration-leaf" action="http://echo.htmlacademy.ru/" method="post">
             <fieldset class="delivery__fieldset">
               <legend class="delivery__legend title-three">Выберите ягоды</legend>
@@ -154,29 +153,29 @@
               <legend class="delivery__legend title-three">Ваши контакты</legend>
               <div class="delivery__data">
                 <label class="input delivery__name">
-                  <input class="input__value" type="text" placeholder="Как к вам обращаться?" required>
+                  <input class="input__value" type="text" name="name" placeholder="Как к вам обращаться?" required>
                   <span class="input__label">Имя</span>
                   <span class="input__message">Введите ваше имя</span>
                 </label>
                 <label class="input delivery__tel">
-                  <input class="input__value" type="tel" placeholder="+7 ххх ххх хх хх" required>
+                  <input class="input__value" type="tel" name="telephone" placeholder="+7 ххх ххх хх хх" required>
                   <span class="input__label">Телефон</span>
                   <span class="input__message">Введите ваш номер телефона</span>
                 </label>
                 <label class="input delivery__email">
-                  <input class="input__value" type="email" placeholder="Ваш email" required>
+                  <input class="input__value" type="email" name="email" placeholder="Ваш email" required>
                   <span class="input__label">Email</span>
                   <span class="input__message">Введите ваш email</span>
                 </label>
                 <label class="input delivery__address">
-                  <input class="input__value" type="text" placeholder="Адрес в Санкт-Петербурге" required>
+                  <input class="input__value" type="text" name="address" placeholder="Адрес в Санкт-Петербурге" required>
                   <span class="input__label">Адрес</span>
                   <span class="input__message">Введите ваш адрес доставки</span>
                 </label>
-                <label class="input delivery__message">
-                  <textarea class="input__value" placeholder="Чем мы можем вам помочь?"></textarea>
+                <p class="input delivery__message">
+                  <textarea class="input__value" name="message" placeholder="Чем мы можем вам помочь?"></textarea>
                   <span class="input__label">Пожелания к заказу</span>
-                </label>
+                </p>
               </div>
             </fieldset>
             <button class="delivery__button button" type="submit">Заказать</button>
@@ -189,13 +188,13 @@
         <article class="contacts__info address">
           <h2 class="address__title title-two">Где забрать<br>&nbsp;ягоды?</h2>
           <address class="address__info">
-            <p class="address__description">Забери ягоды с нашего склада по адресу: </p>
-            <a class="address__item address__item--street link" href="">Набережная Обводного канала, 101</a>
+            <p class="address__description">Забери ягоды с нашего склада по адресу:</p>
+            <a class="address__item address__item--street link" href="#map">Набережная Обводного канала, 101</a>
             <a class="address__item address__item--telephone link" href="tel:+79105244118">+ 7 910 524 41 18</a>
-            <a class="address__item address__item--email link" href="malito:info@yagoda.ru">info@yagoda.ru</a>
+            <a class="address__item address__item--email link" href="mailto:info@yagoda.ru">info@yagoda.ru</a>
           </address>
         </article>
-        <div class="contacts__map map" id="map">
+        <div class="contacts__map map map-no-js" id="map">
         </div>
       </div>
       <div class="footer__bottom">
@@ -219,26 +218,28 @@
           </a>
           <ul class="social">
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Ссылка на канал telegram</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Ссылка на канал vkontakte</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Ссылка на канал youtube</span>
               </a>
             </li>
           </ul>
-          <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive"></a>
+          <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Курс по HTML и CSS. Адаптивная вёрстка и автоматизация от HTML academy</span>
+          </a>
         </div>
       </div>
     </footer>
-    <script src="vendor/leaflet/leaflet.js" crossorigin=""></script>
+    <script src="vendor/leaflet/leaflet.js" defer></script>
     <script src="scripts/index.js" type="module"></script>
   </body>
 </html>
