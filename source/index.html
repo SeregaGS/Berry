@@ -7,12 +7,11 @@
     <link rel="preload" href="fonts/Comfortaa/Comfortaa-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Raleway/Raleway-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="vendor/leaflet/leaflet.css" crossorigin="">
   </head>
   <body class="page__body">
     <header class="header">
       <div class="container flex between">
-        <a class="logo">
+        <a class="logo" href="#index">
           <svg class="logo__berry" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16.63 21.28s-2.15 1.3-2.63 3.42a12.1 12.1 0 0 0 0 4.44s-3.38 1.4-3.38 5.77c0 4.37 2.85 5.6 2.85 5.6s.03 5.17 3.21 7.95a10.9 10.9 0 0 0 6.53 2.8s1.73 3.68 6.84 3.68c5.11 0 6.85-3.68 6.85-3.68s3.46-.5 6.52-2.8c3.06-2.29 2.98-7.94 2.98-7.94s3.08-1.24 3.08-5.61c0-4.38-3.37-5.77-3.37-5.77s.48-2.32 0-4.44c-.48-2.13-2.63-3.42-2.63-3.42" fill="#B22EC8"/>
             <path d="M46.2 27.86c0-8.94-7.23-11.45-16.17-11.45-8.93 0-16.17 2.52-16.17 11.45a16.17 16.17 0 0 0 32.35 0Z" fill="#B22EC8"/>
@@ -46,7 +45,7 @@
               <a class="navigation__link link" href="order.html">Заказать</a>
             </li>
           </ul>
-          <button class="burger-button">
+          <button class="burger-button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </nav>
@@ -63,13 +62,13 @@
               <li class="hero__item hero__item--frost">Натуральный вкус сохранён методом шоковой<br> заморозки</li>
               <li class="hero__item hero__item--delivery">Доставка по Санкт-Петербургу</li>
             </ul>
-            <a class="button hero__button" href="">Заказать</a>
+            <a class="button hero__button" href="#order">Заказать</a>
           </div>
         </div>
       </section>
       <section class="catalog" id="catalog">
         <div class="container">
-          <h2 class="title-two catalog__title">Каталог </h2>
+          <h2 class="title-two catalog__title">Каталог</h2>
           <div class="catalog__container">
             <article class="catalog__item card">
               <div class="card__description">
@@ -84,10 +83,10 @@
               </div>
               <a class="card__picture" href="#product">
                 <picture>
-                  <source type="image/avif" srcset="images/product/card-1/raspberry@1x.avif 1x, images/product/card-1/raspberry@2x.avif 2x">
-                  <source type="image/webp" srcset="images/product/card-1/raspberry@1x.webp 1x, images/product/card-1/raspberry@2x.webp 2x">
+                  <source type="image/avif" width="264" height="180" srcset="images/product/card-1/raspberry@1x.avif 1x, images/product/card-1/raspberry@2x.avif 2x">
+                  <source type="image/webp" width="264" height="180" srcset="images/product/card-1/raspberry@1x.webp 1x, images/product/card-1/raspberry@2x.webp 2x">
                   <img class="card__image" src="images/product/card-1/raspberry@1x.jpg" srcset="images/product/card-1/raspberry@2x.jpg 2x"
-                       width="264" height="180" alt="Изображение продукта" loading="lazy">
+                        width="264" height="180" alt="Изображение продукта" loading="lazy">
                 </picture>
               </a>
             </article>
@@ -104,10 +103,10 @@
               </div>
               <a class="card__picture" href="#product">
                 <picture>
-                  <source type="image/avif" srcset="images/product/card-2/blackberry@1x.avif 1x, images/product/card-2/blackberry@2x.avif 2x">
-                  <source type="image/webp" srcset="images/product/card-2/blackberry@1x.webp 1x, images/product/card-2/blackberry@2x.webp 2x">
+                  <source type="image/avif" width="264" height="180" srcset="images/product/card-2/blackberry@1x.avif 1x, images/product/card-2/blackberry@2x.avif 2x">
+                  <source type="image/webp" width="264" height="180" srcset="images/product/card-2/blackberry@1x.webp 1x, images/product/card-2/blackberry@2x.webp 2x">
                   <img class="card__image" src="images/product/card-2/blackberry@1x.jpg" srcset="images/product/card-2/blackberry@2x.jpg 2x"
-                       width="264" height="180" alt="Изображение продукта" loading="lazy">
+                        width="264" height="180" alt="Изображение продукта" loading="lazy">
                 </picture>
               </a>
             </article>
@@ -124,10 +123,10 @@
               </div>
               <a class="card__picture" href="#product">
                 <picture>
-                  <source type="image/avif" srcset="images/product/card-3/cowberry@1x.avif 1x, images/product/card-3/cowberry@2x.avif 2x">
-                  <source type="image/webp" srcset="images/product/card-3/cowberry@1x.webp 1x, images/product/card-3/cowberry@2x.webp 2x">
+                  <source type="image/avif" width="264" height="180" srcset="images/product/card-3/cowberry@1x.avif 1x, images/product/card-3/cowberry@2x.avif 2x">
+                  <source type="image/webp" width="264" height="180" srcset="images/product/card-3/cowberry@1x.webp 1x, images/product/card-3/cowberry@2x.webp 2x">
                   <img class="card__image" src="images/product/card-3/cowberry@1x.jpg" srcset="images/product/card-3/cowberry@2x.jpg 2x"
-                       width="264" height="180" alt="Изображение продукта" loading="lazy">
+                        width="264" height="180" alt="Изображение продукта" loading="lazy">
                 </picture>
               </a>
             </article>
@@ -144,10 +143,10 @@
               </div>
               <a class="card__picture" href="#product">
                 <picture>
-                  <source type="image/avif" srcset="images/product/card-4/strawberry@1x.avif 1x, images/product/card-4/strawberry@2x.avif 2x">
-                  <source type="image/webp" srcset="images/product/card-4/strawberry@1x.webp 1x, images/product/card-4/strawberry@2x.webp 2x">
+                  <source type="image/avif" width="264" height="180" srcset="images/product/card-4/strawberry@1x.avif 1x, images/product/card-4/strawberry@2x.avif 2x">
+                  <source type="image/webp" width="264" height="180" srcset="images/product/card-4/strawberry@1x.webp 1x, images/product/card-4/strawberry@2x.webp 2x">
                   <img class="card__image" src="images/product/card-4/strawberry@1x.jpg" srcset="images/product/card-4/strawberry@2x.jpg 2x"
-                       width="264" height="180" alt="Изображение продукта" loading="lazy">
+                        width="264" height="180" alt="Изображение продукта" loading="lazy">
                 </picture>
               </a>
             </article>
@@ -164,10 +163,10 @@
               </div>
               <a class="card__picture" href="#product">
                 <picture>
-                  <source type="image/avif" srcset="images/product/card-5/cherry@1x.avif 1x, images/product/card-5/cherry@2x.avif 2x">
-                  <source type="image/webp" srcset="images/product/card-5/cherry@1x.webp 1x, images/product/card-5/cherry@2x.webp 2x">
+                  <source type="image/avif" width="264" height="180" srcset="images/product/card-5/cherry@1x.avif 1x, images/product/card-5/cherry@2x.avif 2x">
+                  <source type="image/webp" width="264" height="180" srcset="images/product/card-5/cherry@1x.webp 1x, images/product/card-5/cherry@2x.webp 2x">
                   <img class="card__image" src="images/product/card-5/cherry@1x.jpg" srcset="images/product/card-5/cherry@2x.jpg 2x"
-                       width="264" height="180" alt="Изображение продукта" loading="lazy">
+                        width="264" height="180" alt="Изображение продукта" loading="lazy">
                 </picture>
               </a>
             </article>
@@ -184,10 +183,10 @@
               </div>
               <a class="card__picture" href="#product">
                 <picture>
-                  <source type="image/avif" srcset="images/product/card-6/gooseberry@1x.avif 1x, images/product/card-6/gooseberry@2x.avif 2x">
-                  <source type="image/webp" srcset="images/product/card-6/gooseberry@1x.webp 1x, images/product/card-6/gooseberry@2x.webp 2x">
+                  <source type="image/avif" width="264" height="180" srcset="images/product/card-6/gooseberry@1x.avif 1x, images/product/card-6/gooseberry@2x.avif 2x">
+                  <source type="image/webp" width="264" height="180" srcset="images/product/card-6/gooseberry@1x.webp 1x, images/product/card-6/gooseberry@2x.webp 2x">
                   <img class="card__image" src="images/product/card-6/gooseberry@1x.jpg" srcset="images/product/card-6/gooseberry@2x.jpg 2x"
-                       width="264" height="180" alt="Изображение продукта" loading="lazy">
+                        width="264" height="180" alt="Изображение продукта" loading="lazy">
                 </picture>
               </a>
             </article>
@@ -204,10 +203,10 @@
               </div>
               <a class="card__picture" href="#product">
                 <picture>
-                  <source type="image/avif" srcset="images/product/card-7/blueberry@1x.avif 1x, images/product/card-7/blueberry@2x.avif 2x">
-                  <source type="image/webp" srcset="images/product/card-7/blueberry@1x.webp 1x, images/product/card-7/blueberry@2x.webp 2x">
+                  <source type="image/avif" width="264" height="180" srcset="images/product/card-7/blueberry@1x.avif 1x, images/product/card-7/blueberry@2x.avif 2x">
+                  <source type="image/webp" width="264" height="180" srcset="images/product/card-7/blueberry@1x.webp 1x, images/product/card-7/blueberry@2x.webp 2x">
                   <img class="card__image" src="images/product/card-7/blueberry@1x.jpg" srcset="images/product/card-7/blueberry@2x.jpg 2x"
-                       width="264" height="180" alt="Изображение продукта" loading="lazy">
+                        width="264" height="180" alt="Изображение продукта" loading="lazy">
                 </picture>
               </a>
             </article>
@@ -224,10 +223,10 @@
               </div>
               <a class="card__picture" href="#product">
                 <picture>
-                  <source type="image/avif" srcset="images/product/card-8/cranberry@1x.avif 1x, images/product/card-8/cranberry@2x.avif 2x">
-                  <source type="image/webp" srcset="images/product/card-8/cranberry@1x.webp 1x, images/product/card-8/cranberry@2x.webp 2x">
+                  <source type="image/avif" width="264" height="180" srcset="images/product/card-8/cranberry@1x.avif 1x, images/product/card-8/cranberry@2x.avif 2x">
+                  <source type="image/webp" width="264" height="180" srcset="images/product/card-8/cranberry@1x.webp 1x, images/product/card-8/cranberry@2x.webp 2x">
                   <img class="card__image" src="images/product/card-8/cranberry@1x.jpg" srcset="images/product/card-8/cranberry@2x.jpg 2x"
-                       width="264" height="180" alt="Изображение продукта" loading="lazy">
+                        width="264" height="180" alt="Изображение продукта" loading="lazy">
                 </picture>
               </a>
             </article>
@@ -252,8 +251,7 @@
             <article class="newsletter__post post">
               <h3 class="post__title">В июне дарим скидку 15% на все свежие ягоды</h3>
               <p class="text post__text">
-                Свежие ягоды урожая этого года
-                <br>со скидкой 15%.  &nbsp;Клубнику, малину, голубику, вишню доставим от 200 гр. </p>
+                Свежие ягоды урожая этого года <br>со скидкой 15%. Клубнику, малину, голубику, вишню доставим от 200 гр.</p>
               <footer class="post__footer post__leaf">
                 <time class="post__datetime" datetime="2022-06-15">15 июня 2022</time>
               </footer>
@@ -277,18 +275,18 @@
         <article class="contacts__info address">
           <h2 class="address__title title-two">Где забрать<br>&nbsp;ягоды?</h2>
           <address class="address__info">
-            <p class="address__description">Забери ягоды с нашего склада по адресу: </p>
+            <p class="address__description">Забери ягоды с нашего склада по адресу:</p>
             <a class="address__item address__item--street link" href="#maps">Набережная Обводного канала, 101</a>
             <a class="address__item address__item--telephone link" href="tel:+79105244118">+ 7 910 524 41 18</a>
-            <a class="address__item address__item--email link" href="malito:info@yagoda.ru">info@yagoda.ru</a>
+            <a class="address__item address__item--email link" href="mailto:info@yagoda.ru">info@yagoda.ru</a>
           </address>
         </article>
-        <div class="contacts__map map" id="map">
+        <div class="contacts__map map map-no-js" id="map">
         </div>
       </div>
       <div class="footer__bottom">
         <div class="footer__container container">
-          <a class="logo">
+          <a class="logo" href="#index">
             <svg class="logo__berry" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16.63 21.28s-2.15 1.3-2.63 3.42a12.1 12.1 0 0 0 0 4.44s-3.38 1.4-3.38 5.77c0 4.37 2.85 5.6 2.85 5.6s.03 5.17 3.21 7.95a10.9 10.9 0 0 0 6.53 2.8s1.73 3.68 6.84 3.68c5.11 0 6.85-3.68 6.85-3.68s3.46-.5 6.52-2.8c3.06-2.29 2.98-7.94 2.98-7.94s3.08-1.24 3.08-5.61c0-4.38-3.37-5.77-3.37-5.77s.48-2.32 0-4.44c-.48-2.13-2.63-3.42-2.63-3.42" fill="#B22EC8"/>
               <path d="M46.2 27.86c0-8.94-7.23-11.45-16.17-11.45-8.93 0-16.17 2.52-16.17 11.45a16.17 16.17 0 0 0 32.35 0Z" fill="#B22EC8"/>
@@ -309,26 +307,28 @@
           </a>
           <ul class="social">
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Ссылка на канал telegram</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Ссылка на канал vkontakte</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Ссылка на канал youtube</span>
               </a>
             </li>
           </ul>
-          <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive"></a>
+          <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Курс по HTML и CSS. Адаптивная вёрстка и автоматизация от HTML academy</span>
+          </a>
         </div>
       </div>
     </footer>
-    <script src="vendor/leaflet/leaflet.js" crossorigin=""></script>
+    <script src="vendor/leaflet/leaflet.js" defer></script>
     <script src="scripts/index.js" type="module"></script>
   </body>
 </html>
