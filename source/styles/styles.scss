@@ -1,11 +1,8 @@
-/* GLOBAL */
 @import "./common/variables.scss";
 @import "./common/function.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 @import "./common/utils.scss";
-
-/* BLOCKS */
 @import "./blocks/burger.scss";
 @import "./blocks/button.scss";
 @import "./blocks/checkbox.scss";
@@ -17,7 +14,6 @@
 @import "./blocks/post.scss";
 @import "./blocks/map.scss";
 @import "./blocks/address.scss";
-/* LAYOUTS */
 @import "./layouts/grid.scss";
 @import "./layouts/page.scss";
 @import "./layouts/body.scss";
@@ -26,6 +22,8 @@
 @import "./layouts/hero.scss";
 @import "./layouts/catalog.scss";
 @import "./layouts/newsletter.scss";
-@import "layouts/contacts";
+@import "./layouts/contacts.scss";
 @import "./layouts/footer.scss";
 @import "./layouts/delivery.scss";
+@import "./layouts/page-error.scss";
+@import "../vendor/leaflet/leaflet.css";
