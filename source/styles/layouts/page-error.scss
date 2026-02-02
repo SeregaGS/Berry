@@ -1,0 +1,25 @@
+@import "../common/variables.scss";
+@import "../common/function.scss";
+/* stylelint-disable function-no-unknown */
+.page-error {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.page-error__title {
+  font-size: fluid(32, 92, 182);
+  color: $color-success;
+  margin-bottom: 10px;
+}
+
+.page-error__description {
+  font-family: $font-family-title;
+  font-size: fluid(22, 32, 42);
+  margin: 20px 0;
+}
+
+.page-error__link {
+  font-size: fluid(16, 25, 32);
+  color: $color-success;
+}
