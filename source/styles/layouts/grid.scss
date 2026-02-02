@@ -7,17 +7,21 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 $padding-primary-large;
+
   @media (max-width: $width-large) {
     padding: 0 $padding-primary-medium;
   }
 }
+
 .flex {
   display: flex;
 }
+
 .between {
   justify-content: space-between;
   align-items: center;
 }
+
 .right {
   justify-content: end;
 }

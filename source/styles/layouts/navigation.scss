@@ -1,6 +1,6 @@
 @import "../common/function.scss";
 @import "../common/variables.scss";
-
+/* stylelint-disable function-no-unknown */
 .navigation-no-js {
   @media (max-width: $width-medium - 1) {
     .navigation__container {
@@ -16,26 +16,30 @@
       background-color: $color-bg-secondary;
       z-index: -2;
     }
+
     .burger-button {
       display: none;
     }
   }
 }
+
 .navigation__container {
   display: flex;
   flex-wrap: wrap;
-  column-gap: rem(28);
-  row-gap: rem(16);
+  gap: rem(16) rem(28);
   margin: rem(5) rem(36) 0 rem(35);
   padding: 0;
   list-style-type: none;
+
   @media (max-width: $width-large) {
     gap: rem(16);
     margin-right: 0;
   }
+
   @media (max-width: ($width-medium - 1)) {
     display: none;
   }
+
   &--open {
     @media (max-width: ($width-medium - 1)) {
       position: absolute;
@@ -52,15 +56,19 @@
     }
   }
 }
+
 .navigation__item {
   min-width: rem(132);
+
   @media (max-width: $width-large) {
     min-width: rem(112);
   }
+
   @media (max-width: $width-medium - 1) {
     min-width: fit-content;
   }
 }
+
 .navigation__link {
   font-size: rem(20);
 }
