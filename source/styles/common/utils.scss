@@ -1,6 +1,6 @@
 @import "../common/function.scss";
 @import "../common/variables.scss";
-
+/* stylelint-disable function-no-unknown */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -13,6 +13,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .title-one {
   font-family: $font-family-title;
   font-size: fluid(36, 48, 52);
@@ -20,6 +21,7 @@
   line-height: 1;
   color: $color-text-primary;
 }
+
 .title-two {
   font-family: $font-family-title;
   font-size: fluid(36, 48, 52);
@@ -27,6 +29,7 @@
   line-height: 1;
   color: $color-text-primary;
 }
+
 .title-three {
   font-family: $font-family-title;
   font-size: fluid(20, 22, 28);
@@ -34,6 +37,7 @@
   line-height: 1;
   color: $color-text-primary;
 }
+
 .text {
   font-family: inherit;
   font-size: fluid(14, 15, 16);
@@ -41,10 +45,12 @@
   line-height: 1.25;
   color: $color-text-primary;
   text-decoration: none;
+
   &--accent {
     font-size: fluid(16, 17, 18);
   }
 }
+
 .link {
   font-family: inherit;
   font-size: rem(22);
@@ -54,22 +60,27 @@
   text-decoration: none;
   outline: none;
   transition: color 0.15s ease;
-  &:hover:not(&--active),
-  &:focus:not(&--active) {
+
+  &:hover:not(.link--active),
+  &:focus:not(.link--active) {
     color: $color-success-hover;
   }
-  &:active:not(&--active) {
+
+  &:active:not(.link--active) {
     color: $color-success-active;
   }
+
   &--active {
     color: hsla(161, 79%, 28%, 1);
   }
 }
+
 .decoration-leaf {
   background-image: url("../../icons/line-leaf.svg");
   background-size: rem(296) rem(42);
   background-position: center top;
   background-repeat: no-repeat;
+
   @media (max-width: $width-medium - 1) {
     background-size: rem(228) rem(32);
     background-position: center rem(3);
