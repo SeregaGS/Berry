@@ -1,3 +1,4 @@
+/* global L */
 const TILE_LAYER = 'https://api.maptiler.com/maps/dataviz-v4/{z}/{x}/{y}.png?key=my5KOkIt5CksOOCacAKQ';
 const ATTRIBUTION = '';
 const COORDINATES = {
@@ -9,7 +10,7 @@ const COORDINATES_PIN = {
   lat: 59.91380,
   lng: 30.33352
 };
-const PIN_TEXT = "Набережная Обводного канала, 101.";
+const PIN_TEXT = 'Набережная Обводного канала, 101.';
 
 const customMarkerIcon = L.divIcon({
   className: 'customMarkerIcon',
@@ -31,6 +32,12 @@ const createMarker = (map, icon, text, props) => {
 };
 const mapCreate = () => {
   const mapContainer = document.querySelector('.map');
+  if(mapContainer.classList.contains('map-no-js')) {
+    mapContainer.classList.remove('map-no-js');
+  }
+  if(!mapContainer) {
+    return null;
+  }
   const map = L.map(mapContainer, {
     zoomControl: false,
     attributionControl: false,
